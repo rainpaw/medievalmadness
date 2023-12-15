@@ -2,6 +2,8 @@ package net.rainpaw10.medievalmadness;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.rainpaw10.medievalmadness.block.ModBlocks;
+import net.rainpaw10.medievalmadness.item.ModItemGroups;
 import net.rainpaw10.medievalmadness.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,5 +20,7 @@ public class MedievalMadness implements ModInitializer {
 		LOGGER.info("[" + MOD_ID + "]: Mod is initialized!");
 
 		ModItems.registerModItems();
+		//ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }

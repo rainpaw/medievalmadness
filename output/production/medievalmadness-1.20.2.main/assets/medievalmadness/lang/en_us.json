@@ -1,3 +1,6 @@
 {
-  "item.medievalmadness.ruby": "Ruby"
+  "item.medievalmadness.light_iron_ingot": "Light Iron Ingot",
+  "item.medievalmadness.heavy_iron_ingot": "Heavy Iron Ingot",
+
+  "itemgroup.medievalmadness": "Medieval Madness"
 }

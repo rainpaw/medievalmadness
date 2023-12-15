@@ -12,10 +12,14 @@ import net.rainpaw10.medievalmadness.MedievalMadness;
 
 public class ModItems {
 
-    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item LIGHT_IRON_INGOT = registerItem("light_iron_ingot", new Item(new FabricItemSettings()));
+    public static final Item HEAVY_IRON_INGOT = registerItem("heavy_iron_ingot", new Item(new FabricItemSettings()));
+    public static final Item LIGHT_NETHERITE_INGOT = registerItem("light_netherite_ingot", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY);
+        entries.add(LIGHT_IRON_INGOT);
+        entries.add(HEAVY_IRON_INGOT);
+        entries.add(LIGHT_NETHERITE_INGOT);
     }
 
     private static Item registerItem(String name, Item item) {
@@ -23,7 +27,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        MedievalMadness.LOGGER.info("Registering Mod Items For " + MedievalMadness.MOD_ID);
+        MedievalMadness.LOGGER.info("Registering Mod Items For: " + MedievalMadness.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
