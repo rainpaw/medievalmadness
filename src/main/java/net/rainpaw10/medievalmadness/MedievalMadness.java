@@ -20,7 +20,7 @@ public class MedievalMadness implements ModInitializer {
 		LOGGER.info("[" + MOD_ID + "]: Mod is initialized!");
 
 		ModItems.registerModItems();
-		//ModItemGroups.registerItemGroups();
+		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 	}
 }
